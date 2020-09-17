@@ -4,7 +4,6 @@ import "./App.css";
 
 function App() {
   const [sorting, setSorting] = useState(data.claims);
-  const [sla, setSla] = useState(data.slas);
   const [count, setCount] = useState(0);
   function sort(e) {
     function compare(a, b) {
@@ -84,7 +83,7 @@ function App() {
       <div>
         <h1>Status</h1>
       </div>
-      <SlaStatus data={sla}></SlaStatus>
+      <SlaStatus data={data.slas}></SlaStatus>
       <div>
         <h1>Claim List</h1>
       </div>
